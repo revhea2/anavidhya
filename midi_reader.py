@@ -32,6 +32,6 @@ def read_midi(file):
 
                 # chord
                 elif isinstance(element, chord.Chord):
-                    notes.append('.'.join(str(n) for n in element.normalOrder))
+                    notes.append('.'.join(str(n) for n in element.type))
 
     return np.array(notes)
